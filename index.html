@@ -1,36 +1,30 @@
-< <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang=en>
-  <head>
+  </head>
     <meta charset=utf-8>
     <title>First time coding</title>
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-
-    <h1>Help me choose..</h1>
+     <h1>Help me choose between..</h1>
     <div class="inputSection">
       <div class= "inputs">
         <input placeholder="Something"></input>
       </div>
-      <button class"addOption">Add</button>
+      <button class ="addOption">Add</button>
    </div>
    <div class="resultSection"></div>
    <button>Go!</button>
-   <script scr="https://code.jquery.com/jquery-3.2.1.min.js">
-   </script>
+
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script>
    $ (function() {
    $ ('.resultSection').hide ()
-
-   var add_option = function () {
-     $ ('.input').append('<input></input>')
-
- }
-
- $('.addOption') .click (add_option)
-
-   })
-
-   </script>
+    var  add_option = function () {
+     $ ('.inputs').append('<input></input>')
+    }
+    $('.addOption') .click(add_option)
+  })
+  </script>
  </body>
 </html>
